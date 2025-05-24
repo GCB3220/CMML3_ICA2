@@ -57,7 +57,7 @@ p_ari <- plot_metric_comparison(ari_seurat, ari_citefuse, 'ARI')
 # NMI
 nmi_seurat <- seurat_data$NMI
 nmi_citefuse <- citefuse_data$NMI
-p_nmi <- plot_metric_comparison(nmi_seurat, nmi_citfuse, 'NMI')
+p_nmi <- plot_metric_comparison(nmi_seurat, nmi_citefuse, 'NMI')
 # Silhouette
 sil_seurat <- seurat_data$Silhouette
 sil_citefuse <- citefuse_data$Silhouette
