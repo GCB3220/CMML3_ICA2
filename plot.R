@@ -9,7 +9,7 @@ library(dplyr)
 # plot function
 plot_metric_comparison <- function(seurat_data, citefuse_data, metric_name) {
   df_summary <- data.frame(
-    group = rep(c("Seurat", "CITEFuse"), each = length(seurat_data)),
+    group = rep(c("Seurat", "CiteFuse"), each = length(seurat_data)),
     value = c(seurat_data, citefuse_data)
   ) %>%
     group_by(group) %>%
