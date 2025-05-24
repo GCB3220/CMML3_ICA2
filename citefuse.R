@@ -75,13 +75,7 @@ for(seed in random_seeds) {
   results <- data.frame(
     Seed = seed,
     Metric = c("ARI", "NMI", "Silhouette", 'Time'),
-    Value = c(ari, nmi, sil_score, as.numeric(end_time - start_time, units = "mins")),
-    Description = c(
-      "Adjusted Rand Index (0-1, higher is better)",
-      "Normalized Mutual Information (0-1, higher is better)",
-      "Mean Silhouette Width (-1 to 1, higher is better)",
-      "Running time (min)"
-    )
+    Value = c(ari, nmi, sil_score, as.numeric(end_time - start_time, units = "mins"))
   )
   result_file <- paste0("citefuse_results_", seed, ".csv")
   write.csv(results, result_file, row.names = FALSE)
